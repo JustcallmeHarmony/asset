@@ -16,11 +16,22 @@
       <div class="current-asset">
         <div class="current-asset-row c-container-price">
           <label class="current-asset-label">현재 자산</label>
-          <p class="v-show current-asset-value">-</p>
+          <div>
+            <p class="v-show current-asset-value"></p>
+          <span class="v-none current-asset-loader">
+          <i class=" fa-circle-notch fa-spin"></i>
+        </span>
+          </div>
           <input type="number" class="v-none current-asset-input" placeholder="현재 자산을 등록해주세요"/>
         </div>
-        <button class="c-button c-large-button current-asset-button v-none">현재 자산 등록</button>
+        <button class="c-button c-large-button current-asset-button v-none">
+          현재 자산 등록
+          <span class="v-none current-asset-button-loader">
+            <i class=" fa-circle-notch fa-spin"></i>
+          </span> 
+        </button>
       </div>
+
       <!-- 현재 자산 end -->
       
       <div class="margin-top-54"></div>
