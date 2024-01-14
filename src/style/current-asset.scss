@@ -1,0 +1,52 @@
+.title {
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+ .current-asset {
+  padding: 12px 20px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 0px 20px;
+}
+
+.current-asset-row {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.current-asset-label {
+  padding-right: 20px;
+  width: 80px;
+  min-width: 80px;
+}
+.current-asset-value-wrapper {
+  width: 100%;
+}
+
+.current-asset-value {
+  padding: 14px;
+  padding-right: 0px;
+  font-size: 16px;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+}
+
+.current-asset-input {
+  padding: 14px;
+  font-size: 16px;
+  background-color: #E0E0E0;
+  border-radius: 12px;
+  width: 100%;
+  border: none;
+  text-align: right;
+}
+
+.current-asset-input:focus {
+  background-color: white;
+}
+ 

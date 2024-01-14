@@ -1,0 +1,33 @@
+
+ /* 소비내역 작성하기 start */
+ .add-item {
+    margin: 0px 20px;
+  }
+  
+  button.add-item-button {
+    background-color: #F0F0F0;
+    border: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  
+  .add-item-detail {
+    background: white;
+    border-radius: 12px;
+    padding: 8px 20px 20px 20px;
+    margin: 20px;
+    margin-bottom: 54px;
+  }
+  
+  
+  section.item-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+   /* 소비내역 작성하기 end */

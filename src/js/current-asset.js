@@ -1,6 +1,6 @@
-import { addCurrentAsset } from "../api/add-current-asset.js";
-import { getCurrentAsset } from "../api/get-current-asset.js";
-import { toHidden, toShow } from "./util.js";
+import { updateCurrentAsset } from "../api/update-current-asset";
+import { getCurrentAsset } from "../api/get-current-asset";
+import { toHidden, toShow } from "./util";
 
 const $currentAssetValue = document.querySelector(".current-asset-value");
 const $currentAssetLoader = document.querySelector(".current-asset-loader");
@@ -18,17 +18,18 @@ export const initCurrentAsset = () => {
     const inputValue = $currentAssetInput.value;
     if (inputValue > 0) {
       handleAddCurrentAsset(inputValue);
+      toHidden($currentAssetButton);
     } else {
       console.warn("0원 이상이 아닙니다.");
     }
   });
 };
 
-const handleAddCurrentAsset = async (inputValue) => {
+export const handleAddCurrentAsset = async (inputValue) => {
   toShow($currentAssetButtonLoader);
   toHidden($currentAssetButton);
 
-  await addCurrentAsset(Number(inputValue));
+  await updateCurrentAsset(Number(inputValue));
 
   toHidden($currentAssetButtonLoader);
   toShow($currentAssetButton);
